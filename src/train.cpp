@@ -2,7 +2,4 @@
 #include <iostream>
 #include "train.h"
 
-int main() {
-  // TODO
-	return 0;
-}
+//TODO
