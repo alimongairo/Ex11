@@ -17,6 +17,11 @@ class Cage {
 class Train {
   Cage* first;  // указатель на первый вагон
   Cage* last;   // указатель на последний вагон
+ public:
+  Train();
+  void get_state();
+  void add_cage(Cage*);
+  int get_length();
 };
 
 #endif  // INCLUDE_TRAIN_H_
