@@ -21,7 +21,7 @@ TEST(Train, test_2) {
   EXPECT_EQ(expected, result);
 }
 
-TEST(Train, test_2) {
+TEST(Train, test_3) {
   Train tr;
   for (int i = 0; i < 10; i++) {
     Cage* cg = new Cage();
