@@ -20,7 +20,7 @@ void Train::get_state() {
 }
 
 void Train::add_cage(Cage* cg) {
-  if(first == nullptr) {
+  if (first == nullptr) {
     first = cg;
     last = cg;
     cg->next = cg;
