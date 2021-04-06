@@ -12,6 +12,7 @@ class Cage {
   void on() { light = true; }
   void off() { light = false; }
   bool get() const { return light; }
+  void change() { light = !light; }
 };
 
 class Train {

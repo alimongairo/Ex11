@@ -27,4 +27,26 @@ void Train::add_cage(Cage* cg) {
   last = cg;
 }
 
-int Train::get_length() {}  // TODO
+int Train::get_length() {
+  if (first != nullptr) {
+    int len;
+    int count = 1;
+    Cage* tmp = first;
+    bool start_state = first->get();
+    while (true) {
+      if (tmp->get() != start_state) {
+        len = count;
+        tmp->change();
+        for (int i = 0; i < count; i++) {
+          tmp = tmp->prev;
+        }
+        count = 1;
+        if (tmp->get() != start_state) return len;
+      } else {
+        count++;
+        tmp = tmp->next;
+      }
+    }
+  }
+  return 0;
+}
