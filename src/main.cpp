@@ -1,8 +1,8 @@
 // Copyright 2021 by idpas
-#include <iostream>
-#include "train.h"
 #include <stdlib.h>
 #include <time.h>
+#include <iostream>
+#include "train.h"
 
 int main() {
   srand(time(NULL));
