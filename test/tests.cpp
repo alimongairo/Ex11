@@ -6,7 +6,7 @@
 TEST(Train, test_1) {
   Train tr;
   size_t expected = 0;
-  size_t result = train.get_length();
+  size_t result = tr.get_length();
   EXPECT_EQ(expected, result);
 }
 
@@ -17,7 +17,7 @@ TEST(Train, test_2) {
     tr.add_cage(cg);
   }
   size_t expected = 10;
-  size_t result = train.get_length();
+  size_t result = tr.get_length();
   EXPECT_EQ(expected, result);
 }
 
@@ -30,6 +30,6 @@ TEST(Train, test_2) {
   Cage* cg_2 = new Cage();
   tr.add_cage(cg_2);
   size_t expected = 11;
-  size_t result = train.get_length();
+  size_t result = tr.get_length();
   EXPECT_EQ(expected, result);
 }
